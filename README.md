@@ -67,6 +67,8 @@ node.js : https://nodejs.org/en/download/
 
 Replace the redirectUri  ```redirectUri: "https://covid19help.eu-gb.cf.appdomain.cloud/app/callback"```  with ```redirectUri: "http://localhost:3000/app/callback"```
 
+To start the server : 
+``` node server.js ``` in the node.js application folder
 
 
 ## Live demo
