@@ -137,7 +137,7 @@ You can find a running system to test at [ Auxilium ](https://covid19help.eu-gb.
 ## Authors
 
 * **Stanislaus Lasrado** - [stanislaus35](https://github.com/stanislaus35)
-* **Kishan Kumar** - [Kishan-K88](https://github.com/Kishan-K88)
+* **Kishan Kumar** - [Kishan-K88](https://github.com/Kishan-K88
 * **Vidhyashree B M** - [VidhyaGowda](https://github.com/VidhyaGowda)
 * **Yasir Faiz Ahmed** - [PurpleBooth](https://github.com/PurpleBooth)
 * **Yash Malviya** - [malviyayash18](https://github.com/malviyayash18)
