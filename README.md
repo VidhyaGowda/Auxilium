@@ -40,11 +40,11 @@ A web application that acts as an interface between the ones who want to help an
 
 ## Full video
 
-[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)](https://www.youtube.com/watch?v=GfD0K7R8UD4&t)
+[![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Demo_Thumbnail.png)](https://www.youtube.com/watch?v=GfD0K7R8UD4&t)
 
 ## Demo video
 
-[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)](https://www.youtube.com/watch?v=GfD0K7R8UD4&t)
+[![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Thumbnail.png)](https://www.youtube.com/watch?v=GfD0K7R8UD4&t)
 
 ## The architecture
 
