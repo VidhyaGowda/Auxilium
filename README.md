@@ -13,14 +13,10 @@ A  GitHub repository  for Call for Code.
 1. [Long description](#long-description)
 1. [Project roadmap](#project-roadmap)
 1. [Getting started](#getting-started)
-1. [Running the tests](#running-the-tests)
 1. [Live demo](#live-demo)
 1. [Built with](#built-with)
-1. [Contributing](#contributing)
-1. [Versioning](#versioning)
 1. [Authors](#authors)
-1. [License](#license)
-1. [Acknowledgments](#acknowledgments)
+1. 
 
 ## Short description
 
@@ -38,11 +34,11 @@ A web application that acts as an interface between the ones who want to help an
 
 ## Full video
 
-[![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Demo_Thumbnail.png)](https://www.youtube.com/watch?v=GfD0K7R8UD4&t)
+[![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Thumbnail.png)](https://www.youtube.com/watch?v=GfD0K7R8UD4&t)
 
 ## Demo video
 
-[![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Thumbnail.png)](https://www.youtube.com/watch?v=GfD0K7R8UD4&t)
+[![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Demo_Thumbnail.png)](https://www.youtube.com/watch?v=GfD0K7R8UD4&t)
 
 ## The architecture
 
@@ -63,64 +59,17 @@ A web application that acts as an interface between the ones who want to help an
 
 ## Getting started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+node.js : https://nodejs.org/en/download/
 
-```bash
-dnf install wget
-wget http://www.example.com/install.sh
-bash install.sh
-```
+### Start the App
 
-### Installing
+Replace the redirectUri  ```redirectUri: "https://covid19help.eu-gb.cf.appdomain.cloud/app/callback"```  with ```redirectUri: "http://localhost:3000/app/callback"```
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be, for example
-
-```bash
-export TOKEN="fffd0923aa667c617a62f5A_fake_token754a2ad06cc9903543f1e85"
-export EMAIL="jane@example.com"
-dnf install npm
-node samplefile.js
-Server running at http://127.0.0.1:3000/
-```
-
-And repeat
-
-```bash
-curl localhost:3000
-Thanks for looking at Code-and-Response!
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why, if you were using something like `mocha` for instance
-
-```bash
-npm install mocha --save-dev
-vi test/test.js
-./node_modules/mocha/bin/mocha
-```
-
-### And coding style tests
-
-Explain what these tests test and why, if you chose `eslint` for example
-
-```bash
-npm install eslint --save-dev
-npx eslint --init
-npx eslint sample-file.js
-```
 
 ## Live demo
 
@@ -142,8 +91,6 @@ You can find a running system to test at [ Auxilium ](https://covid19help.eu-gb.
 
 See also the list of [contributors](https://github.com/Code-and-Response/Project-Sample/graphs/contributors) who participated in this project.
 
-## License
 
-This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details
 
 
