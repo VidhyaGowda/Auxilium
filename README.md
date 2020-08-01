@@ -32,11 +32,11 @@ A web application that acts as an interface between the ones who want to help an
 
 ## Full video
 
-[![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Thumbnail.png)](https://www.youtube.com/watch?v=GfD0K7R8UD4&t)
+[![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Thumbnail.png)](https://youtu.be/hSH2qF6qa40)
 
 ## Demo video
 
-[![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Demo_Thumbnail.png)](https://www.youtube.com/watch?v=GfD0K7R8UD4&t)
+[![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Demo_Thumbnail.png)](https://youtu.be/GfD0K7R8UD4)
 
 ## The architecture
 
