@@ -49,7 +49,7 @@ A web application that acts as an interface between the ones who want to help an
 
 ## Long description
 
-[More detail is available here](DESCRIPTION.md)
+[More detail is available here](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/Description.md)
 
 ## Project roadmap
 
