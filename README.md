@@ -15,7 +15,6 @@ A  GitHub repository  for Call for Code.
 1. [Live demo](#live-demo)
 1. [Built with](#built-with)
 1. [Authors](#authors)
-1. 
 
 ## Short description
 
