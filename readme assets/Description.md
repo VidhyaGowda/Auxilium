@@ -23,8 +23,8 @@ List of Cloud functions created
 5.	HELP_DELETE_POST – To delete service from database
 6.	HELP_UPDATE_POST – To update the user services in the database 
 
-### RESULTS
-FRONT END DESIGN:
+## RESULTS
+### FRONT END DESIGN:
  [![Watch the video](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/2020-08-01.png)
 
 This is the Dashboard of the AUXILIUM Web Application. On Launch, you will be promoted a login for the first time which is powered by IBM APP ID. Once you login you will land on the ‘About Us’ Page as seen in the image above. You will notice the ‘Provide Services’ and the ‘Need Services?’ buttons. 
