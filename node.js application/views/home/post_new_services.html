@@ -1,0 +1,99 @@
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+    type="text/css" />
+<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <!-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Post a new service</h1>
+          </div> -->
+
+    <!-- Content Row -->
+
+
+    <div class="row">
+
+
+        <div class="col">
+            <div class="card shadow mb-4" style="width: 100%;margin: auto;">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Post a new service here</h6>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="service">Category :</label>
+                        <select name="service" class="custom-select" id="service" required>
+                            <option>Education</option>
+                            <option>Food</option>
+                            <option>Medical</option>
+                            <option>Clothing</option>
+                            <option>Housing</option>
+                            <option>Employment</option>
+                        </select>
+                        <div class="invalid-feedback">Please choose a service type</div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description : </label>
+                        <textarea rows="4" name="description" class="form-control" id="description" required></textarea>
+                        <div class="invalid-feedback show">Please choose a service type</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-auto">
+                            <button onclick="post_validation_location()" class="btn btn-primary" type="button">Post
+                                a new
+                                service</button>
+                        </div>
+                        <div class="col-sm">
+                            <div id="round_round"></div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    “Earn your success based on service to others, not at the expense of others.”- H. Jackson Brown,
+                    Jr.
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="location_modal" tabindex="-1" role="dialog" aria-labelledby="location_modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 style="width: 100%;text-align: center;" class="m-0 font-weight-bold text-primary"
+                    id="exampleModalLongTitle">Choose a location for your
+                    service</h5>
+            </div>
+            <div class="modal-body" style="height: 300px;">
+                <div id="geocoder"></div>
+                <div style="position: initial;" id="map"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="row" style="width: 100%;margin: 0;">
+                    <div class="col">
+                        <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Close</button>
+                    </div>
+                    <div class="col">
+                        <button onclick="final_location()" type="button" class="btn btn-primary btn-block">Select this
+                            location</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

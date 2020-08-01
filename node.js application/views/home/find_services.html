@@ -1,0 +1,181 @@
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+    type="text/css" />
+<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+
+<div class="container-fluid" style="padding: 0;">
+
+    <!-- Page Heading -->
+    <!-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Post a new service</h1>
+          </div> -->
+
+    <!-- Content Row -->
+
+
+    <div class="row">
+        <div class="col">
+            <div class="card shadow mb-4" style="width: 100%;margin: auto;">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Find services that you need</h6>
+                </div>
+                <div class="card-body">
+
+                    <div class="row" style="margin: auto;width: 100%;max-width: 700px;">
+                        <div class="col-md-10">
+                            <label class="sr-only" for="inlineFormInputName2">Name</label>
+                            <input style="margin: 0;" type="text" class="form-control mb-2 mr-sm-2"
+                                id="search_result_input" placeholder="Let us know what you need">
+
+                        </div>
+                        <div class="col-sm-auto">
+                            <button id="search_button_go" style="margin-top: 0!important;" type="button"
+                                onclick="search_results()" class="btn btn-primary my-1 btn-block">Search</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="search_results" style="display: none;">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 text-primary">Search results :</h6>
+                    </div>
+
+                    <div id="table_area" class="card-body">
+
+                        <style>
+                            #search_table td {
+                                vertical-align: middle;
+                                text-align: center;
+                            }
+
+                            #search_table th {
+                                text-align: center;
+                            }
+                        </style>
+                        <div id="no_result"
+                            style="display: none;text-align: center;margin: auto;width: 90%;display: none;">
+                            No services found
+                        </div>
+
+                        <div id="body_table" class="table-responsive" style="display: none;">
+                            <table class="table" id="search_table" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Service</th>
+                                        <th>Description</th>
+                                        <th>Posted on</th>
+                                        <th>Status</th>
+                                        <th>Distance</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="loader_icon">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="location_modal" tabindex="-1" role="dialog" aria-labelledby="location_modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 style="width: 100%;text-align: center;" class="m-0 font-weight-bold text-primary"
+                    id="exampleModalLongTitle">Choose a location for your
+                    service</h5>
+            </div>
+            <div class="modal-body" style="height: 300px;">
+                <div id="geocoder"></div>
+                <div style="position: initial;" id="map"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="row" style="width: 100%;margin: 0;">
+                    <div class="col">
+                        <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Close</button>
+                    </div>
+                    <div class="col">
+                        <button onclick="final_location()" type="button" class="btn btn-primary btn-block">Select this
+                            location</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="view_service_modal" tabindex="-1" role="dialog" aria-labelledby="view_service_modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 style="width: 100%;text-align: center;" class="m-0 font-weight-bold text-primary"
+                    id="exampleModalLongTitle">Service details</h5>
+            </div>
+            <div class="modal-header" style="padding-top: 20px;">
+                <div class="row" style="margin: 0;font-size: 15px;">
+                    <div class="row" style="margin: 0;width: 100%;">
+                        <div class="col-sm">
+                            Service provider :
+                        </div>
+                        <div class="col-sm" id="service_provider_name">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;width: 100%;">
+                        <div class="col-sm">
+                            Contact Number :
+                        </div>
+                        <div class="col-sm" id="service_provider_contact">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;width: 100%;">
+                        <div class="col-sm">
+                            Service :
+                        </div>
+                        <div class="col-sm" id="service_provider_service">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;width: 100%;">
+                        <div class="col-sm">
+                            Description :
+                        </div>
+                        <div class="col-sm" id="service_provider_description">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal_body_round_round" class="modal-body" style="height: 300px;">
+
+            </div>
+            <div class="modal-footer">
+                <div class="row" style="width: 100%;margin: 0;">
+                    <div class="col">
+                        <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

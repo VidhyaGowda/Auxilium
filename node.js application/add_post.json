@@ -1,0 +1,19 @@
+{
+    "location": {
+        "coordinates": [
+            "36.152 N",
+            "-51.064 N"
+        ],
+        "state": "Karnataka",
+        "country": "India"
+    },
+    "content": {
+        "service": "Food",
+        "description": "Tomato"
+    },
+    "properties": {
+        "created_on": "12-06-2020 10:00 AM",
+        "updated_on": "12-06-2020 01:00 PM",
+        "available": true
+    }
+}
