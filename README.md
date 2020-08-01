@@ -40,12 +40,7 @@ A web application that acts as an interface between the ones who want to help an
 
 ## The architecture
 
-![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
-
-1. The user navigates to the site and uploads a video file.
-2. Watson Speech to Text processes the audio and extracts the text.
-3. Watson Translation (optionally) can translate the text to the desired language.
-4. The app stores the translated text as a document within Object Storage.
+![Video transcription/translation app](https://github.com/malviyayash18/Project-Auxilium/blob/master/readme%20assets/auxilium_final.png)
 
 ## Long description
 
