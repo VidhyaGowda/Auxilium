@@ -2,7 +2,6 @@
  [![Website](https://img.shields.io/badge/View-Website-blue)](https://covid19help.eu-gb.cf.appdomain.cloud/)
 
 A  GitHub repository  for Call for Code.
-*Read this in other languages: [English](README.md), [한국어](README.ko.md), [português](README.pt_br.md).*
 
 ## Contents
 
